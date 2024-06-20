@@ -1,56 +1,152 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Magamról.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Prezentáció</title>
+    <style>
+        body {
+            background-color: rgb(199, 199, 199);
+            margin: 0px auto;
+        }
+
+        .container {
+            background-image: url(alap.jpg);
+            border: solid 2px black;
+            padding: 5px;
+            margin: 10px auto;
+        }
+
+        #kepem {
+            width: auto;
+            height: 210px;
+            border-radius: 20%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
+        }
+
+        h1 {
+            color: brown;
+            border-bottom: solid 1px black;
+        }
+
+        #első {
+            text-align: center;
+            color: darkred;
+            text-decoration: underline;
+            border-bottom: 0px;
+        }
+
+        #második {
+            text-align: center;
+            border-bottom: 0px;
+        }
+
+        .nagybetűs {
+            text-transform: uppercase;
+            margin-left: 92px;
+            margin-top: 30px;
+            border-bottom: solid 1px black;
+            color: darkred;
+        }
+
+        p {
+            margin-left: 92px;
+            margin-top: 0px;
+            color: black;
+            margin-right: 30px;
+        }
+
+        #kép {
+            width: 50px;
+            height: 70px;
+            border-radius: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .er{
+            margin-left: 20px;
+        }
+        
+        #err{
+            margin-left:35px;
+        }
+
+        img {
+            height: 60px;
+            width: 70px;
+            float: right;
+            border-radius: 50%;
+        }
+
+        #profil {
+            padding-top: 63px;
+        }
+
+        .haha {
+            margin: 20px;
+            
+        }
+
+        @media (min-width: 700px) {
+            .nagybetűs, p {
+                margin-left: 70px;
+                margin-right: 20px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .nagybetűs, p {
+                margin-left: 50px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
     <div class="container">
         <header>
-            <h1 id="első">Önéletrajz</h1>
+            <h1 id="első">Önéletrajz <span id="clientWidth"></span></h1>
         </header>
-        <div class="row col-md-12">
+        <div class="row">
             <div class="col-md-6">
                 <img class="img-fluid" id="kepem" src="enkep.jpg" alt="Csík Szabolcs Alex" title="Csík Szabolcs Alex">
                 <h1 id="második">Csík Szabolcs Alex</h1>
                 <p class="nagybetűs">Kapcsolat</p>
-                <p>Mobil: <br> +36702421586</p>
-                <p>Email: <br> <a>alexszabi04@gmail.com</a></p> 
+                <div class="er">
+                    <p>Mobil: <br> +36702421586</p>
+                    <p>Email: <br> <a href="mailto:alexszabi04@gmail.com">alexszabi04@gmail.com</a></p>
+                </div>
                 <p class="nagybetűs">Nyelvismeret</p>
-                <p><strong>Angol-</strong> Jól beszélem a nyelvet, a középfokú nyelvvizsga megszerzésére törekszem.</p>
-                
+                <div class="er">
+                    <p><strong>Angol-</strong> Jól beszélem a nyelvet, a felsőfokú nyelvvizsga megszerzésére törekszem.</p>
+                </div>
+
+
                 <p class="nagybetűs">Képességeim</p>
-                <div class="row col-md-12">
-                    <div class="col-md-6">
-                        <p>Excel</p>
-                        <p>Java/Javascript</p>
-                        <p>PowerPoint</p>
-                        <p>HTML</p>
-                     </div>    
-                    <div class=" col-md-6">
-                        <p> &#9679;&#9679;&#9679;&#9679;&#9676;</p>
-                        <p>&#9679;&#9679;&#9679;&#9679;&#9676;</p>
-                        <p>&#9679;&#9679;&#9679;&#9679;&#9676;</p>
-                        <p>&#9679;&#9679;&#9679;&#9679;&#9679;</p> 
+                <div class="row">
+                    <div class="er" id="err">
+                        <p>MS Office alapszintű ismerete(Word, PowerPoint, Excel, Access)</p>
+                        <p>Telefonos platformok/appok ismerete</p>
+                        <p>Internetes alkalmazások felhasználói ismerete</p>
+                        <p>Visual Studio Code középszintű ismerete</p>
+                        <p>középszintű programozás, adatbáziskezelés</p>
+                        <p>Webhelyek, weboldalak készítése, szerkesztése</p>
+                        <p>Programozási Nyelvismereteim: Java, Javascript, Css, Html</p>
                     </div>
-                </div> 
-                <p class="nagybetűs">Hobbiaim</p>
-                <table class="row col-md-12">  
-                    <div class="haha">
-                        <img class="col-md3" src="hobbi2.png" alt="">
-                        <img class="col-md3" src="hobbi5.jpg" alt="">
-                        <img class="col-md3" src="hobbi4.jpg" alt="">
-                        <img class="col-md3" src="hobbi3w.jpg" alt="">
-                        <img class="col-md3" src="hobbi6.png" alt="">                          
-                    </div>      
-                    
-                </table>    
+                </div>
             </div>
-            <div class="col-md-6"> 
+            <div class="col-md-6">
                 <h1 id="profil">Profil</h1>
                 <ul>
                     <li>Születési dátum: 2004. Január 23.</li>
@@ -61,28 +157,29 @@
                 </ul>
                 <h1>Szakmai Tapasztalat</h1>
                 <ol>
-                    <li><strong>Hirös Ízek Kft.</strong> </li> 
-                    <ul>
-                        <li>
-                            Hirös Ízek Kft.-nél dolgoztam nyáriszünetben.
-                        </li>
-                    </ul>    
-                    <li> <strong>Fürge Diák Iskolaszövetkezet - Kecskemét</strong> </li> 
+                    <li><strong>Hirös Ízek Kft.</strong>
                         <ul>
-                            <li>
-                                Som-Plast Kft.-nél dolgoztam mint diákmunkás.
-                            </li>
-                </ul>                                   
+                            <li>Hirös Ízek Kft.-nél dolgoztam nyári szünetben.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fürge Diák Iskolaszövetkezet - Kecskemét</strong>
+                        <ul>
+                            <li>Som-Plast Kft.-nél dolgoztam mint diákmunkás.</li>
+                        </ul>
+                    </li>
                 </ol>
                 <h1>Tanulmányok</h1>
                 <ul>
                     <p>
-                        <li>KECSKEMÉTI SZC KANDÓ KÁLMÁN Technikum diákja vagyok, Szoftverfejlesztő/tesztelő informatikus szakon.</li>
-                        <li>Kecskeméti Szakképzési Centrum GRÓF KÁROLYI SÁNDOR Technikumba vettek fel és végeztem el az angol 1 éves felkészítőt.<br></li>
-                        <li>A Kecskeméti Vásárhelyi Pál Általános Iskola és AMI - Móricz Zsigmond Általános Iskolája, Hetényegyháza általános iskolában végeztem négyes feletti átlaggal.<br> </li>                         
+                        <li>KECSKEMÉTI SZC KANDÓ KÁLMÁN Technikum diákja vagyok, Szoftverfejlesztő/tesztelő informatikus
+                            szakon.</li>
+                        <li>Kecskeméti Szakképzési Centrum GRÓF KÁROLYI SÁNDOR Technikumba vettek fel és végeztem el az
+                            angol 1 éves felkészítőt.</li>
+                        <li>A Kecskeméti Vásárhelyi Pál Általános Iskola és AMI - Móricz Zsigmond Általános Iskolája,
+                            Hetényegyháza általános iskolában végeztem négyes feletti átlaggal.</li>
                         <li id="sor">Logischool (Dr.Code) 4 éves képzés elvégzése</li>
-                    </p> 
-                </ul>       
+                    </p>
+                </ul>
                 <h1>Tulajdonságaim:</h1>
                 <div class="row">
                     <div class="col-md-6">
@@ -90,20 +187,20 @@
                             <li>Szeretek csapatban dolgozni</li>
                             <li>Céltudatos vagyok</li>
                             <li>Nagycsaládban nőttem fel, ezért az alkalmazkodás nem okoz gondot</li>
+                            <li>Informatikai területen tapasztalatok</li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul>
                             <li>Jó kommunikációs képességem van</li>
-                            <li>Megoldásban gondoldolkodom</li>
+                            <li>Megoldásban gondolkodom</li>
                             <li>Amatőr kerékpározás hobbi szinten - cél versenyekre elindulás</li>
                         </ul>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
 </body>
+
 </html>
